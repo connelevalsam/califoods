@@ -14,3 +14,62 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { 
+  margin-bottom: 30px;
+}
+
+.food-item {
+  position: 'relative'; 
+  display: 'block';
+}
+
+.food-item .project-description {
+  opacity: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  background: hsla(0,0%,100%,.5);
+  position: absolute;
+  width: 90%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 5%;
+  text-decoration: none;
+}
+
+.food-item .project-description .project-text-holder {
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.food-item .project-description .project-text-holder .project-text-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.food-item:hover .project-description{opacity:1}
