@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 const About = () => {
     return ( 
@@ -31,7 +32,9 @@ const About = () => {
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     
-                    <a href="/contact" className="btn btn-primary" title=""> Get in touch</a>
+                    <Link href="/contact">
+                        <a className="btn btn-primary" title=""> Get in touch</a>
+                    </Link>
                 </div>
             </div>
         </>

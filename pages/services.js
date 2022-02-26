@@ -47,14 +47,18 @@ const Services = ({ recipes }) => {
                     <img className="img-responsive" alt="" src="./assets/images/img-13.jpg " />
                     <h2>Adipiscing</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="/contact" className="btn btn-primary" title=""> Get in touch</a>
+                    <Link href="/contact">
+                        <a className="btn btn-primary" title=""> Get in touch</a>
+                    </Link>
                 </div>
 
                 <div className="col-xs-12 col-md-4 section-container-spacer">
                     <img className="img-responsive" alt="" src="./assets/images/img-14.jpg " />
                     <h2>Dolor</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="/contact" className="btn btn-primary" title=""> Get in touch</a>
+                    <Link href="/contact">
+                        <a className="btn btn-primary" title=""> Get in touch</a>
+                    </Link>
                 </div>
 
             </div>
