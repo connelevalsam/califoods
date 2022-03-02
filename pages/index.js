@@ -16,7 +16,8 @@ export async function getStaticProps() {
   return {
       props: {
           recipes: res.items
-      }
+      },
+      revalidate: 10
   }
 }
 
@@ -32,6 +33,7 @@ export default function Home({ recipes }) {
       <Head>
         <title>caliFoods | Home</title>
         <meta name="keywords" content="Calabar foods" />
+        <meta name="author" content="Connel Asikong" />
       </Head>
       <div className="hero-full-wrapper">
         {/* <div className="grid" >

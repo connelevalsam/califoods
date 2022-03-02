@@ -23,8 +23,7 @@ const Header = () => {
                                 Cali Foods
                             </a>
                         </Link>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor.</p>
+                        <p>Home of carefully cooked delicious Calabar food with a touch of kop no me and wonderful flavours.</p>
                     </div>
                     <ul className="nav">
                         <li>
@@ -52,17 +51,23 @@ const Header = () => {
 
                     <nav className="nav-footer">
                         <p className="nav-footer-social-buttons">
-                            <a className="fa-icon" href="https://www.instagram.com/" title="">
-                                <i className="fa fa-instagram"></i>
-                            </a>
-                            <a className="fa-icon" href="https://dribbble.com/" title="">
-                                <i className="fa fa-dribbble"></i>
-                            </a>
-                            <a className="fa-icon" href="https://twitter.com/" title="">
-                                <i className="fa fa-twitter"></i>
-                            </a>
+                            <Link href="https://www.linkedin.com/in/connel-asikong-00016181">
+                                <a className="fa-icon" title="">
+                                    <i className="fa fa-linkedin"></i>
+                                </a>
+                            </Link>
+                            <Link href="https://twitter.com/ConnelBlaze">
+                                <a className="fa-icon" title="">
+                                    <i className="fa fa-twitter"></i>
+                                </a>
+                            </Link>
+                            <Link href="https://connelblaze.medium.com">
+                                <a className="fa-icon" title="">
+                                    <i className="fa fa-medium"></i>
+                                </a>
+                            </Link>
                         </p>
-                        <p>© 2021 CB | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Cali Foods</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+                        <p>© 2021 CB | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Massively</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
                     </nav>  
                 </div> 
             </nav>
