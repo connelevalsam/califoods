@@ -2,6 +2,7 @@ import { createClient } from 'contentful'
 import Head from 'next/head'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 import { documentToReactComponents  } from '@contentful/rich-text-react-renderer';
+import Skeleton from '../../components/Skeleton';
 
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -33,7 +34,7 @@ export const getStaticPaths = async () => {
     
     return {
         paths,
-        fallback: false
+        fallback: true
     }
 }
 
@@ -43,6 +44,15 @@ export async function getStaticProps({ params }) {
         "fields.slug": params.slug
      })
 
+     if (!items.length) {
+         return {
+             redirect: {
+                 destination: '/',
+                 permanent: false
+             }
+         }
+     }
+
      return {
          props: { recipe: items[0] },
          revalidate: 10
@@ -50,8 +60,10 @@ export async function getStaticProps({ params }) {
   }
 
 const Recipes = ({ recipe }) => {
-    console.log(recipe);
+    if(!recipe) return <Skeleton />
+
     const { cookingTime, featuredImage, ingredients, methods, title } = recipe.fields
+
     return ( 
         <>
             <Head>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+const { default: Socials } = require("./Socials")
 
 const Header = () => {
     return ( 
@@ -51,23 +52,9 @@ const Header = () => {
 
                     <nav className="nav-footer">
                         <p className="nav-footer-social-buttons">
-                            <Link href="https://www.linkedin.com/in/connel-asikong-00016181">
-                                <a className="fa-icon" title="">
-                                    <i className="fa fa-linkedin"></i>
-                                </a>
-                            </Link>
-                            <Link href="https://twitter.com/ConnelBlaze">
-                                <a className="fa-icon" title="">
-                                    <i className="fa fa-twitter"></i>
-                                </a>
-                            </Link>
-                            <Link href="https://connelblaze.medium.com">
-                                <a className="fa-icon" title="">
-                                    <i className="fa fa-medium"></i>
-                                </a>
-                            </Link>
+                            <Socials />
                         </p>
-                        <p>© 2021 CB | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Massively</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+                        <p>© 2021 CB | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
                     </nav>  
                 </div> 
             </nav>

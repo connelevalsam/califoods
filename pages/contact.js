@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Socials from '../components/Socials';
 
 const Contact = () => {
     return ( 
@@ -53,15 +54,7 @@ const Contact = () => {
                                 </li>
                             </ul>
                             <h3>Follow me on social networks</h3>
-                            <a href="https://www.linkedin.com/" title="" className="fa-icon">
-                                <i className="fa fa-linkedin"></i>
-                            </a>
-                            <a href="https://twitter.com/" title="" className="fa-icon">
-                                <i className="fa fa-twitter"></i>
-                            </a>
-                            <a href="https://dribbble.com/" title="" className="fa-icon">
-                                <i className="fa fa-dribbble"></i>
-                            </a>
+                            <Socials />
                             </div>
                         </div>
                         </form>
