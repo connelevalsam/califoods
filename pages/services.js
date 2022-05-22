@@ -37,7 +37,7 @@ const Services = ({ recipes }) => {
                     <img className="img-responsive" alt="" src="./assets/images/img-12.jpg" />
                     <h2>Training</h2>
                     <p>The recipes are part of the free <strong>Training</strong> done by our Staff.
-                        We offer personal and group tutoring on preparations of various meals.
+                        We offer personal and group tutoring on preparations of various meals.<br />
                     </p>
                     <Link href="/contact">
                         <a className="btn btn-primary" title=""> Get in touch</a>
